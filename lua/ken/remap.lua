@@ -8,3 +8,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Replace word under cursor" })
 
+-- Exit insert mode without hitting Esc
+vim.keymap.set("v", "l", "<Esc>", { desc = "Esc" })
+
